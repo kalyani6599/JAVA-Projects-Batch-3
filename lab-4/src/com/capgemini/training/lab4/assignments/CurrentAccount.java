@@ -1,4 +1,3 @@
-package com.capgemini.training.lab4.assignments;
 
 /**
  * 
@@ -6,6 +5,7 @@ package com.capgemini.training.lab4.assignments;
  *
  */
 
+package com.capgemini.training.lab4.assignments;
 public class CurrentAccount extends Account {
 
 	private double overdraftLimit;

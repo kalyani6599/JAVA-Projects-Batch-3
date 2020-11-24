@@ -8,11 +8,11 @@ public class EISDemo {
 
 	public static void main(String[] args) {
 		
-		Employee e1 = new Employee();
-		EmployeeService emp = new EmployeeServiceImpl(); 
-		emp.getEmployeeDetails(e1);
-		System.out.println("Insurance Scheme : "+emp.findInsuranceScheme(e1));
-		emp.showEmployeeDetails(e1);
+		Employee emp = new Employee();
+		EmployeeService emp1 = new EmployeeServiceImpl(); 
+		emp1.getEmployeeDetails(emp);
+		System.out.println("Insurance Scheme : "+emp1.findInsuranceScheme(emp));
+		emp1.showEmployeeDetails(emp);
 	}
 
 }

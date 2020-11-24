@@ -1,3 +1,7 @@
+/*
+ * 
+ * @author A K
+ */
 package com.cg.eis.service;
 
 import java.util.Scanner;
@@ -51,17 +55,17 @@ public class EmployeeServiceImpl implements EmployeeService{
 		 * <5000 				Clerk				No Scheme
 		 */
 		
-		Designation desig = emp.getDesignation();
+		Designation designation = emp.getDesignation();
 		Double salary = emp.getSalary();
 		String scheme = null;
 		
-		if(desig.equals(Designation.SYSTEM_ASSOCIATE) && (salary > 5000 && salary < 20000))
+		if(designation.equals(Designation.SYSTEM_ASSOCIATE) && (salary > 5000 && salary < 20000))
 			scheme = "Scheme C";
-		else if(desig.equals(Designation.PROGRAMMER) && (salary >= 20000 && salary < 40000))
+		else if(designation.equals(Designation.PROGRAMMER) && (salary >= 20000 && salary < 40000))
 			scheme = "Scheme B";
-		else if(desig.equals(Designation.MANAGER) && (salary >= 40000))
+		else if(designation.equals(Designation.MANAGER) && (salary >= 40000))
 			scheme = "Scheme A";
-		else if(desig.equals(Designation.PROGRAMMER) && (salary < 5000))
+		else if(designation.equals(Designation.PROGRAMMER) && (salary < 5000))
 			scheme = "No Scheme";
 		
 		emp.setInsuranceScheme(scheme);
